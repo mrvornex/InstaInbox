@@ -34,7 +34,7 @@ export async function createAccount(
   // Random username if not provided
   const user = username ?? randUser();
   const address = `${user}@${domain}`;
-  const password = randPass();
+  const password = randPass();  
 
   // Register
   const regRes = await fetch(`${BASE}/accounts`, {
